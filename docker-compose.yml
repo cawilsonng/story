@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: example
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+  frontend:
+    image: story-frontend:latest
+    build: ./story-frontend
+    ports:
+      - "80:80"
+    links:
+      - backend:backend
+  backend:
+    image: story-backend:latest
+    build: ./story-backend
+    links:
+      - db:db
+    volumes:
+      - ./application.properties:/app/application.properties

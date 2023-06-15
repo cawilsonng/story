@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "3f9a816c-ca32-4670-ad4a-06ea06a0fcdd",
+		"name": "Story",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Story",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"The Lighthouse's Secret\",\r\n    \"description\": \"On a secluded coastal town, a young girl uncovers a hidden passage beneath the town's lighthouse, leading her on a journey filled with ancient legends, mysterious artifacts, and the discovery of her own destiny.\",\r\n    \"content\": \"In the quiet seaside town of Harbor's Edge, nestled between towering cliffs and crashing waves, stood an old lighthouse that cast its guiding light across the darkened sea. Few knew of the secrets it held within its weathered walls, but one curious young girl named Amelia was about to uncover its hidden mysteries.\\n\\nAmelia had always been drawn to the enigmatic charm of the lighthouse. With each passing day, she would watch as its beam of light cut through the mist, illuminating the path for sailors at sea. She yearned to explore its nooks and crannies, believing that it held untold stories and ancient treasures.\\n\\nOne stormy evening, as thunder rumbled and rain poured relentlessly, Amelia's curiosity got the best of her. Determined to unravel the lighthouse's secrets, she ventured towards its towering structure, slipping through the creaking gate and sneaking inside.\\n\\nIn the heart of the lighthouse, Amelia stumbled upon a hidden trapdoor obscured by years of dust and neglect. With trembling hands, she pried it open, revealing a dimly lit passage leading downward into the depths below. Without hesitation, she descended into the unknown, guided by the faint glow of her flashlight.\\n\\nAs she delved deeper, Amelia discovered a hidden chamber filled with ancient maps, weathered journals, and cryptic symbols etched into the walls. It was a treasure trove of forgotten knowledge, holding the key to uncovering the town's long-lost secrets.\\n\\nAmelia became engrossed in the tales of old, piecing together fragments of the town's history. She learned of a legendary artifact, the Ocean's Heart, said to possess the power to bring harmony to the tumultuous seas and protect the town from imminent disaster. The artifact had been lost for generations, but the lighthouse held clues to its whereabouts.\\n\\nDriven by a sense of purpose and destiny, Amelia embarked on a perilous quest to find the Ocean's Heart. She deciphered riddles, followed ancient maps, and braved treacherous cliffs. Along the way, she encountered mysterious figures who had guarded the secret for centuries, testing her courage and determination.\\n\\nAs Amelia journeyed closer to her goal, she faced formidable challenges, battling treacherous currents, and overcoming her own doubts and fears. She realized that the quest was not only about finding the Ocean's Heart but also about discovering her own strength and resilience.\\n\\nIn a climactic finale, Amelia unearthed the hidden cave that held the Ocean's Heart. The artifact shimmered with a captivating blue light, resonating with the power of the sea. As she held it in her hands, a surge of energy coursed through her, connecting her to the ancient forces that had shaped her town's destiny.\\n\\nAmelia returned to Harbor's Edge, her heart filled with purpose and a renewed sense of belonging. With the Ocean's Heart in her possession, she used its power to calm stormy seas, guide lost ships to safety, and bring prosperity to her coastal community. She became a beacon of hope, just like the lighthouse that had ignited her curiosity.\\n\\nThe townspeople celebrated Amelia as a hero, their gratitude and admiration echoing through the streets. But for Amelia, the true reward was not the praise or recognition. It was the knowledge that she had embraced her destiny, uncovered the secrets of the lighthouse, and brought light to the shadows that had concealed the town's true potential.\\n\\nAnd so, the lighthouse stood tall, its light shining brighter than ever, serving as a reminder that even in the darkest of times, the smallest spark of curiosity and courage can lead to extraordinary discoveries and illuminate the path towards one's true purpose.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/stories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Story",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"test\",\r\n    \"description\": \"description\",\r\n    \"content\": \"content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/stories/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download Story",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/stories/1/download",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stories",
+						"1",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Stories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"test\",\r\n    \"description\": \"description\",\r\n    \"content\": \"content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/stories/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stories",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Statistics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/history/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"history",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Story Statistics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/history",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
